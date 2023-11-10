@@ -1,1 +1,1 @@
-Sitemap: https://GagginiLorenzo.github.io/meteoproject/sitemap.xml
+Sitemap: https://github.com/GagginiLorenzo/meteoproject/sitemap.xml
