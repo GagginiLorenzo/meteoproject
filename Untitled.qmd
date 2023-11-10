@@ -1,8 +1,5 @@
----
-jupyter: .venv
----
-
 ```{python}
-print(e)
+print("test")
 ```
+
 
