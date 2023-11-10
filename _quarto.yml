@@ -1,5 +1,7 @@
 project:
   type: website
+  render:
+    - Untitled.qmd:
 
 website:
   title: "Meteoproject"

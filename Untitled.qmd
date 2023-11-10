@@ -1,0 +1,8 @@
+---
+jupyter: .venv
+---
+
+```{python}
+print(e)
+```
+
