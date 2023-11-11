@@ -31,9 +31,10 @@ d = [[dat['daily']['time'][0],dat['daily']['temperature_2m_max'][0],dat['daily']
 [dat['daily']['time'][3],dat['daily']['temperature_2m_max'][3],dat['daily']['temperature_2m_min'][3]]]
 print("")
 
-SVG(print ("{:<16} {:<8} {:<16}".format('date', 'tmax', 'tmin')))
+SVG(print ("{:<24} {:<8} {:<16}".format('date', 'tmax', 'tmin')))
 for v in d:
     date,tmax,tmin = v
-    SVG(print ("{:<16} {:<8} {:<16}".format(date,tmax,tmin)))
+    SVG(print ("{:<24} {:<8} {:<16}".format(date,tmax,tmin)))
 ```
+
 
