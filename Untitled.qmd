@@ -29,10 +29,10 @@ d = [[dat['daily']['time'][0],dat['daily']['temperature_2m_max'][0],dat['daily']
 [dat['daily']['time'][2],dat['daily']['temperature_2m_max'][2],dat['daily']['temperature_2m_min'][2]],
 [dat['daily']['time'][3],dat['daily']['temperature_2m_max'][3],dat['daily']['temperature_2m_min'][3]]]
      
-print ("{:<32} {:<16} {:<16}".format('day', 'tmax', 'tmin'))
+print ("{:<28} {:<8} {:<16}".format('date', 'tmax', 'tmin'))
 
 for v in d:
-    day,tmax,tmin = v
-    print ("{:<32} {:<16} {:<15}".format(day,tmax,tmin))
+    date,tmax,tmin = v
+    print ("{:<28} {:<8} {:<15}".format(date,tmax,tmin))
 ```
 
