@@ -36,4 +36,3 @@ for v in d:
     print ("{:<32} {:<16} {:<15}".format(day,tmax,tmin))
 ```
 
-
