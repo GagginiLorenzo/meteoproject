@@ -1,5 +1,47 @@
+---
+jupyter: python3
+---
+
 ```{python}
 print("test")
 ```
+
+```{python}
+import urllib
+import json
+from IPython.display import SVG, Image
+```
+
+```{python}
+url = "https://api.open-meteo.com/v1/meteofrance?latitude=43.6109&longitude=3.8763&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max&timezone=Europe%2FLondon"
+from urllib.request import urlopen
+with urlopen(url) as response:
+    data = response.read()
+
+print(data.decode())
+```
+
+```{python}
+dat=json.loads(data.decode())
+```
+
+```{python}
+print(dat['daily']['time'])
+```
+
+```{python}
+display(SVG(filename="svg/icon.svg"))
+d = [[dat['daily']['time'][0],dat['daily']['temperature_2m_max'][0],dat['daily']['temperature_2m_min'][0]],
+[dat['daily']['time'][1],dat['daily']['temperature_2m_max'][1],dat['daily']['temperature_2m_min'][1]], 
+[dat['daily']['time'][2],dat['daily']['temperature_2m_max'][2],dat['daily']['temperature_2m_min'][2]],
+[dat['daily']['time'][3],dat['daily']['temperature_2m_max'][3],dat['daily']['temperature_2m_min'][3]]]
+     
+print ("{:<32} {:<16} {:<16}".format('day', 'tmax', 'tmin'))
+
+for v in d:
+    day,tmax,tmin = v
+    print ("{:<32} {:<16} {:<15}".format(day,tmax,tmin))
+```
+
 
 
