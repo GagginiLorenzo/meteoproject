@@ -23,16 +23,18 @@ dat=json.loads(data.decode())
 ```
 
 ```{python}
+#| scrolled: true
 display(SVG(filename="svg/icon.svg"))
 d = [[dat['daily']['time'][0],dat['daily']['temperature_2m_max'][0],dat['daily']['temperature_2m_min'][0]],
 [dat['daily']['time'][1],dat['daily']['temperature_2m_max'][1],dat['daily']['temperature_2m_min'][1]], 
 [dat['daily']['time'][2],dat['daily']['temperature_2m_max'][2],dat['daily']['temperature_2m_min'][2]],
 [dat['daily']['time'][3],dat['daily']['temperature_2m_max'][3],dat['daily']['temperature_2m_min'][3]]]
-     
-SVG(print ("{:<28} {:<8} {:<16}".format('date', 'tmax', 'tmin')))
+print("")
 
+SVG(print ("{:<32} {:<8} {:<16}".format('date', 'tmax', 'tmin')))
 for v in d:
     date,tmax,tmin = v
-    SVG(print ("{:<28} {:<8} {:<16}".format(date,tmax,tmin)))
+    SVG(print ("{:<32} {:<8} {:<16}".format(date,tmax,tmin)))
 ```
+
 
