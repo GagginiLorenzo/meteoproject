@@ -1,10 +1,9 @@
 ---
+execute:
+  echo: false
+  warning: false
 jupyter: python3
 ---
-
-```{python}
-print("test")
-```
 
 ```{python}
 import urllib
@@ -17,16 +16,10 @@ url = "https://api.open-meteo.com/v1/meteofrance?latitude=43.6109&longitude=3.87
 from urllib.request import urlopen
 with urlopen(url) as response:
     data = response.read()
-
-print(data.decode())
 ```
 
 ```{python}
 dat=json.loads(data.decode())
-```
-
-```{python}
-print(dat['daily']['time'])
 ```
 
 ```{python}
@@ -42,6 +35,4 @@ for v in d:
     day,tmax,tmin = v
     print ("{:<32} {:<16} {:<15}".format(day,tmax,tmin))
 ```
-
-
 
