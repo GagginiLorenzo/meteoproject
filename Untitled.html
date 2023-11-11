@@ -148,6 +148,54 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>test</code></pre>
 </div>
 </div>
+<div class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> urllib</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> SVG, Image</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>url <span class="op">=</span> <span class="st">"https://api.open-meteo.com/v1/meteofrance?latitude=43.6109&amp;longitude=3.8763&amp;daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max&amp;timezone=Europe</span><span class="sc">%2F</span><span class="st">London"</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> urllib.request <span class="im">import</span> urlopen</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> urlopen(url) <span class="im">as</span> response:</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    data <span class="op">=</span> response.read()</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(data.decode())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>{"latitude":43.61,"longitude":3.88,"generationtime_ms":0.04398822784423828,"utc_offset_seconds":0,"timezone":"Europe/London","timezone_abbreviation":"GMT","elevation":58.0,"daily_units":{"time":"iso8601","temperature_2m_max":"°C","temperature_2m_min":"°C"},"daily":{"time":["2023-11-11","2023-11-12","2023-11-13","2023-11-14"],"temperature_2m_max":[16.9,18.7,15.4,21.3],"temperature_2m_min":[9.6,9.5,9.6,10.7]}}</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>dat<span class="op">=</span>json.loads(data.decode())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(dat[<span class="st">'daily'</span>][<span class="st">'time'</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>['2023-11-11', '2023-11-12', '2023-11-13', '2023-11-14']</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>display(SVG(filename<span class="op">=</span><span class="st">"svg/icon.svg"</span>))</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>d <span class="op">=</span> [[dat[<span class="st">'daily'</span>][<span class="st">'time'</span>][<span class="dv">0</span>],dat[<span class="st">'daily'</span>][<span class="st">'temperature_2m_max'</span>][<span class="dv">0</span>],dat[<span class="st">'daily'</span>][<span class="st">'temperature_2m_min'</span>][<span class="dv">0</span>]],</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>[dat[<span class="st">'daily'</span>][<span class="st">'time'</span>][<span class="dv">1</span>],dat[<span class="st">'daily'</span>][<span class="st">'temperature_2m_max'</span>][<span class="dv">1</span>],dat[<span class="st">'daily'</span>][<span class="st">'temperature_2m_min'</span>][<span class="dv">1</span>]], </span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>[dat[<span class="st">'daily'</span>][<span class="st">'time'</span>][<span class="dv">2</span>],dat[<span class="st">'daily'</span>][<span class="st">'temperature_2m_max'</span>][<span class="dv">2</span>],dat[<span class="st">'daily'</span>][<span class="st">'temperature_2m_min'</span>][<span class="dv">2</span>]],</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>[dat[<span class="st">'daily'</span>][<span class="st">'time'</span>][<span class="dv">3</span>],dat[<span class="st">'daily'</span>][<span class="st">'temperature_2m_max'</span>][<span class="dv">3</span>],dat[<span class="st">'daily'</span>][<span class="st">'temperature_2m_min'</span>][<span class="dv">3</span>]]]</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>     </span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span> (<span class="st">"</span><span class="sc">{:&lt;32}</span><span class="st"> </span><span class="sc">{:&lt;16}</span><span class="st"> </span><span class="sc">{:&lt;16}</span><span class="st">"</span>.<span class="bu">format</span>(<span class="st">'day'</span>, <span class="st">'tmax'</span>, <span class="st">'tmin'</span>))</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> v <span class="kw">in</span> d:</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>    day,tmax,tmin <span class="op">=</span> v</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span> (<span class="st">"</span><span class="sc">{:&lt;32}</span><span class="st"> </span><span class="sc">{:&lt;16}</span><span class="st"> </span><span class="sc">{:&lt;15}</span><span class="st">"</span>.<span class="bu">format</span>(day,tmax,tmin))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="Untitled_files/figure-html/cell-7-output-1.svg" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>day                              tmax             tmin            
+2023-11-11                       16.9             9.6            
+2023-11-12                       18.7             9.5            
+2023-11-13                       15.4             9.6            
+2023-11-14                       21.3             10.7           </code></pre>
+</div>
+</div>
 
 
 
