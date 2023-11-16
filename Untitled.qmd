@@ -2,17 +2,18 @@
 execute:
   echo: false
   warning: false
-jupyter: python3
+jupyter: .shynenv
 ---
 
 ```{python}
+import drawsvg as dw
 import urllib
 import json
 from IPython.display import SVG, Image
 ```
 
 ```{python}
-url = "https://api.open-meteo.com/v1/meteofrance?latitude=43.6109&longitude=3.8763&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max&timezone=Europe%2FLondon"
+url = "https://api.open-meteo.com/v1/meteofrance?latitude=43.6109&longitude=3.8763&daily=temperature_2m_max,temperature_2m_min,precipitation_sum,wind_speed_10m_max&timezone=Europe%2FLondon"
 from urllib.request import urlopen
 with urlopen(url) as response:
     data = response.read()
@@ -23,18 +24,41 @@ dat=json.loads(data.decode())
 ```
 
 ```{python}
-#| scrolled: true
-display(SVG(filename="svg/icon.svg"))
-d = [[dat['daily']['time'][0],dat['daily']['temperature_2m_max'][0],dat['daily']['temperature_2m_min'][0]],
-[dat['daily']['time'][1],dat['daily']['temperature_2m_max'][1],dat['daily']['temperature_2m_min'][1]], 
-[dat['daily']['time'][2],dat['daily']['temperature_2m_max'][2],dat['daily']['temperature_2m_min'][2]],
-[dat['daily']['time'][3],dat['daily']['temperature_2m_max'][3],dat['daily']['temperature_2m_min'][3]]]
-print("")
+table=[0,1,2,3]
+for i in [0,1,2,3] :
+    table[i] = [dat['daily']['time'][i],dat['daily']['temperature_2m_max'][i],dat['daily']['temperature_2m_min'][i],dat['daily']['wind_speed_10m_max'][i],dat['daily']['precipitation_sum'][i]]
+```
 
-SVG(print ("{:<24} {:<8} {:<16}".format('date', 'tmax', 'tmin')))
-for v in d:
-    date,tmax,tmin = v
-    SVG(print ("{:<24} {:<8} {:<16}".format(date,tmax,tmin)))
+```{python}
+l=['Date', 'Tmax', 'Tmin','Vent','Pluie']
+```
+
+```{python}
+d = dw.Drawing(1001,1001)
+d.append(dw.Image(0, 0, 1000, 1000, 'svg.svg', embed=True))
+t=dw.Image(0,0,1000,1000,path='svg.svg',embeded=True)
+d.append(dw.Use(t,0,0))
+d.append(dw.Text(l[0],20,50,150))
+d.append(dw.Text(l[1],20,250,150))
+d.append(dw.Text(l[2],20,350,150))
+d.append(dw.Text(l[3],20,600,150))
+d.append(dw.Text(l[4],20,850,150))
+for i in [0,1,2,3] :
+    text = dw.Text(str(table[i][0]),20,50,200+100*i)
+    d.append(text)
+    text = dw.Text(str(table[i][1])+" C°",20,250,200+100*i)
+    d.append(text)
+    text = dw.Text(str(table[i][2])+" C°",20,350,200+100*i)
+    d.append(text)
+    text = dw.Text(str(table[i][3])+" KM/H",20,600,200+100*i)
+    d.append(text)
+    text = dw.Text(str(table[i][4])+" MM",20,850,200+100*i)
+    d.append(text)
+d.save_svg('layer1.svg')
+```
+
+```{python}
+d
 ```
 
 
