@@ -2,7 +2,6 @@
 execute:
   echo: false
   warning: false
-jupyter: .shynenv
 ---
 
 ```{python}
