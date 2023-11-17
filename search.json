@@ -4,6 +4,6 @@
     "href": "Untitled.html",
     "title": "Meteoproject",
     "section": "",
-    "text": "I have come a long way to achiev this result, and i’m glade it works. here som comment and methodologie explenation: The coding part was not too chalenging, and if someone wants to replicate it, the code is available and should be easly understandable. A critical point was that i didn’t knew anything about quarto, nor github action, so that took me a long time. This page update on push and schedule via a github action I find, available on the repo if sommeone need it. Another critical point was that i wanted to create my own svg’s using python. My first idea was to pars and text edit a svg file, but i after a while i realised it was probably note a good idea and in the end i resigned myself to used some basic available shaped online. it still did teach me a lot about image manipulation and i’ve learn to use the very nice drawsvg library, so it wasn’t to much of a waste."
+    "text": "date                     tmax     tmin            \n2023-11-17               17.0     10.5            \n2023-11-18               17.4     8.3             \n2023-11-19               17.2     6.8             \n2023-11-20               18.4     9.1"
   }
 ]
