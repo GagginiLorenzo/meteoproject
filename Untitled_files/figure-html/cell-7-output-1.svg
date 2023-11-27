@@ -9,24 +9,24 @@
 <text x="350" y="150" font-size="20">Tmin</text>
 <text x="600" y="150" font-size="20">Vent</text>
 <text x="850" y="150" font-size="20">Pluie</text>
-<text x="50" y="200" font-size="20">2023-11-26</text>
-<text x="250" y="200" font-size="20">12.9 C°</text>
-<text x="350" y="200" font-size="20">2.8 C°</text>
-<text x="600" y="200" font-size="20">10.6 KM/H</text>
-<text x="850" y="200" font-size="20">0.0 MM</text>
-<text x="50" y="300" font-size="20">2023-11-27</text>
-<text x="250" y="300" font-size="20">12.4 C°</text>
-<text x="350" y="300" font-size="20">4.1 C°</text>
-<text x="600" y="300" font-size="20">18.0 KM/H</text>
+<text x="50" y="200" font-size="20">2023-11-27</text>
+<text x="250" y="200" font-size="20">10.7 C°</text>
+<text x="350" y="200" font-size="20">0.9 C°</text>
+<text x="600" y="200" font-size="20">11.5 KM/H</text>
+<text x="850" y="200" font-size="20">0.2 MM</text>
+<text x="50" y="300" font-size="20">2023-11-28</text>
+<text x="250" y="300" font-size="20">13.8 C°</text>
+<text x="350" y="300" font-size="20">2.5 C°</text>
+<text x="600" y="300" font-size="20">23.7 KM/H</text>
 <text x="850" y="300" font-size="20">0.0 MM</text>
-<text x="50" y="400" font-size="20">2023-11-28</text>
-<text x="250" y="400" font-size="20">13.4 C°</text>
-<text x="350" y="400" font-size="20">1.8 C°</text>
-<text x="600" y="400" font-size="20">23.4 KM/H</text>
+<text x="50" y="400" font-size="20">2023-11-29</text>
+<text x="250" y="400" font-size="20">9.2 C°</text>
+<text x="350" y="400" font-size="20">-1.1 C°</text>
+<text x="600" y="400" font-size="20">20.6 KM/H</text>
 <text x="850" y="400" font-size="20">0.1 MM</text>
-<text x="50" y="500" font-size="20">2023-11-29</text>
-<text x="250" y="500" font-size="20">9.4 C°</text>
-<text x="350" y="500" font-size="20">-0.7 C°</text>
-<text x="600" y="500" font-size="20">24.3 KM/H</text>
-<text x="850" y="500" font-size="20">1.2 MM</text>
+<text x="50" y="500" font-size="20">2023-11-30</text>
+<text x="250" y="500" font-size="20">11.1 C°</text>
+<text x="350" y="500" font-size="20">6.2 C°</text>
+<text x="600" y="500" font-size="20">22.5 KM/H</text>
+<text x="850" y="500" font-size="20">0.4 MM</text>
 </svg>
