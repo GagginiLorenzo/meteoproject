@@ -9,24 +9,24 @@
 <text x="350" y="150" font-size="20">Tmin</text>
 <text x="600" y="150" font-size="20">Vent</text>
 <text x="850" y="150" font-size="20">Pluie</text>
-<text x="50" y="200" font-size="20">2023-12-21</text>
-<text x="250" y="200" font-size="20">15.0 C°</text>
-<text x="350" y="200" font-size="20">10.6 C°</text>
-<text x="600" y="200" font-size="20">31.9 KM/H</text>
+<text x="50" y="200" font-size="20">2023-12-22</text>
+<text x="250" y="200" font-size="20">15.8 C°</text>
+<text x="350" y="200" font-size="20">11.8 C°</text>
+<text x="600" y="200" font-size="20">35.3 KM/H</text>
 <text x="850" y="200" font-size="20">0.0 MM</text>
-<text x="50" y="300" font-size="20">2023-12-22</text>
-<text x="250" y="300" font-size="20">15.1 C°</text>
-<text x="350" y="300" font-size="20">11.3 C°</text>
-<text x="600" y="300" font-size="20">37.3 KM/H</text>
+<text x="50" y="300" font-size="20">2023-12-23</text>
+<text x="250" y="300" font-size="20">14.8 C°</text>
+<text x="350" y="300" font-size="20">7.8 C°</text>
+<text x="600" y="300" font-size="20">25.0 KM/H</text>
 <text x="850" y="300" font-size="20">0.0 MM</text>
-<text x="50" y="400" font-size="20">2023-12-23</text>
-<text x="250" y="400" font-size="20">14.8 C°</text>
-<text x="350" y="400" font-size="20">7.2 C°</text>
-<text x="600" y="400" font-size="20">30.7 KM/H</text>
+<text x="50" y="400" font-size="20">2023-12-24</text>
+<text x="250" y="400" font-size="20">14.0 C°</text>
+<text x="350" y="400" font-size="20">3.7 C°</text>
+<text x="600" y="400" font-size="20">8.0 KM/H</text>
 <text x="850" y="400" font-size="20">0.0 MM</text>
-<text x="50" y="500" font-size="20">2023-12-24</text>
-<text x="250" y="500" font-size="20">13.7 C°</text>
-<text x="350" y="500" font-size="20">3.6 C°</text>
-<text x="600" y="500" font-size="20">10.5 KM/H</text>
+<text x="50" y="500" font-size="20">2023-12-25</text>
+<text x="250" y="500" font-size="20">12.5 C°</text>
+<text x="350" y="500" font-size="20">3.1 C°</text>
+<text x="600" y="500" font-size="20">9.1 KM/H</text>
 <text x="850" y="500" font-size="20">0.0 MM</text>
 </svg>
