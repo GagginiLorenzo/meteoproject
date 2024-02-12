@@ -10,23 +10,23 @@
 <text x="600" y="150" font-size="20">Vent</text>
 <text x="850" y="150" font-size="20">Pluie</text>
 <text x="50" y="200" font-size="20">2024-02-12</text>
-<text x="250" y="200" font-size="20">10.3 C°</text>
-<text x="350" y="200" font-size="20">5.2 C°</text>
-<text x="600" y="200" font-size="20">14.5 KM/H</text>
-<text x="850" y="200" font-size="20">0.9 MM</text>
+<text x="250" y="200" font-size="20">12.4 C°</text>
+<text x="350" y="200" font-size="20">3.7 C°</text>
+<text x="600" y="200" font-size="20">11.1 KM/H</text>
+<text x="850" y="200" font-size="20">0.3 MM</text>
 <text x="50" y="300" font-size="20">2024-02-13</text>
-<text x="250" y="300" font-size="20">15.6 C°</text>
-<text x="350" y="300" font-size="20">7.2 C°</text>
-<text x="600" y="300" font-size="20">15.9 KM/H</text>
+<text x="250" y="300" font-size="20">16.0 C°</text>
+<text x="350" y="300" font-size="20">6.3 C°</text>
+<text x="600" y="300" font-size="20">14.8 KM/H</text>
 <text x="850" y="300" font-size="20">0.0 MM</text>
 <text x="50" y="400" font-size="20">2024-02-14</text>
-<text x="250" y="400" font-size="20">13.5 C°</text>
-<text x="350" y="400" font-size="20">2.4 C°</text>
-<text x="600" y="400" font-size="20">7.9 KM/H</text>
+<text x="250" y="400" font-size="20">16.6 C°</text>
+<text x="350" y="400" font-size="20">5.3 C°</text>
+<text x="600" y="400" font-size="20">9.4 KM/H</text>
 <text x="850" y="400" font-size="20">0.0 MM</text>
 <text x="50" y="500" font-size="20">2024-02-15</text>
-<text x="250" y="500" font-size="20">11.2 C°</text>
+<text x="250" y="500" font-size="20">11.5 C°</text>
 <text x="350" y="500" font-size="20">3.9 C°</text>
 <text x="600" y="500" font-size="20">18.4 KM/H</text>
-<text x="850" y="500" font-size="20">2.6 MM</text>
+<text x="850" y="500" font-size="20">2.0 MM</text>
 </svg>
