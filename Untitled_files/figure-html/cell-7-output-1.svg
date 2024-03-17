@@ -9,24 +9,24 @@
 <text x="350" y="150" font-size="20">Tmin</text>
 <text x="600" y="150" font-size="20">Vent</text>
 <text x="850" y="150" font-size="20">Pluie</text>
-<text x="50" y="200" font-size="20">2024-03-16</text>
-<text x="250" y="200" font-size="20">21.6 C°</text>
-<text x="350" y="200" font-size="20">12.4 C°</text>
-<text x="600" y="200" font-size="20">14.2 KM/H</text>
+<text x="50" y="200" font-size="20">2024-03-17</text>
+<text x="250" y="200" font-size="20">20.5 C°</text>
+<text x="350" y="200" font-size="20">11.2 C°</text>
+<text x="600" y="200" font-size="20">10.7 KM/H</text>
 <text x="850" y="200" font-size="20">0.0 MM</text>
-<text x="50" y="300" font-size="20">2024-03-17</text>
-<text x="250" y="300" font-size="20">18.4 C°</text>
-<text x="350" y="300" font-size="20">12.3 C°</text>
-<text x="600" y="300" font-size="20">10.1 KM/H</text>
+<text x="50" y="300" font-size="20">2024-03-18</text>
+<text x="250" y="300" font-size="20">19.5 C°</text>
+<text x="350" y="300" font-size="20">11.8 C°</text>
+<text x="600" y="300" font-size="20">8.1 KM/H</text>
 <text x="850" y="300" font-size="20">0.0 MM</text>
-<text x="50" y="400" font-size="20">2024-03-18</text>
-<text x="250" y="400" font-size="20">16.6 C°</text>
-<text x="350" y="400" font-size="20">10.2 C°</text>
-<text x="600" y="400" font-size="20">11.6 KM/H</text>
+<text x="50" y="400" font-size="20">2024-03-19</text>
+<text x="250" y="400" font-size="20">20.2 C°</text>
+<text x="350" y="400" font-size="20">10.3 C°</text>
+<text x="600" y="400" font-size="20">18.5 KM/H</text>
 <text x="850" y="400" font-size="20">0.0 MM</text>
-<text x="50" y="500" font-size="20">2024-03-19</text>
-<text x="250" y="500" font-size="20">19.1 C°</text>
-<text x="350" y="500" font-size="20">10.4 C°</text>
-<text x="600" y="500" font-size="20">16.2 KM/H</text>
-<text x="850" y="500" font-size="20">0.0 MM</text>
+<text x="50" y="500" font-size="20">2024-03-20</text>
+<text x="250" y="500" font-size="20">15.1 C°</text>
+<text x="350" y="500" font-size="20">11.1 C°</text>
+<text x="600" y="500" font-size="20">10.9 KM/H</text>
+<text x="850" y="500" font-size="20">0.3 MM</text>
 </svg>
