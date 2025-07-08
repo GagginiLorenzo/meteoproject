@@ -9,24 +9,24 @@
 <text x="350" y="150" font-size="20">Tmin</text>
 <text x="600" y="150" font-size="20">Vent</text>
 <text x="850" y="150" font-size="20">Pluie</text>
-<text x="50" y="200" font-size="20">2025-07-07</text>
-<text x="250" y="200" font-size="20">27.6 C°</text>
-<text x="350" y="200" font-size="20">20.6 C°</text>
-<text x="600" y="200" font-size="20">31.9 KM/H</text>
+<text x="50" y="200" font-size="20">2025-07-08</text>
+<text x="250" y="200" font-size="20">29.5 C°</text>
+<text x="350" y="200" font-size="20">18.8 C°</text>
+<text x="600" y="200" font-size="20">25.2 KM/H</text>
 <text x="850" y="200" font-size="20">0.0 MM</text>
-<text x="50" y="300" font-size="20">2025-07-08</text>
-<text x="250" y="300" font-size="20">29.3 C°</text>
-<text x="350" y="300" font-size="20">18.7 C°</text>
-<text x="600" y="300" font-size="20">25.1 KM/H</text>
+<text x="50" y="300" font-size="20">2025-07-09</text>
+<text x="250" y="300" font-size="20">31.4 C°</text>
+<text x="350" y="300" font-size="20">18.1 C°</text>
+<text x="600" y="300" font-size="20">15.3 KM/H</text>
 <text x="850" y="300" font-size="20">0.0 MM</text>
-<text x="50" y="400" font-size="20">2025-07-09</text>
-<text x="250" y="400" font-size="20">31.0 C°</text>
-<text x="350" y="400" font-size="20">18.5 C°</text>
-<text x="600" y="400" font-size="20">18.8 KM/H</text>
+<text x="50" y="400" font-size="20">2025-07-10</text>
+<text x="250" y="400" font-size="20">32.8 C°</text>
+<text x="350" y="400" font-size="20">19.5 C°</text>
+<text x="600" y="400" font-size="20">16.4 KM/H</text>
 <text x="850" y="400" font-size="20">0.0 MM</text>
-<text x="50" y="500" font-size="20">2025-07-10</text>
-<text x="250" y="500" font-size="20">33.0 C°</text>
-<text x="350" y="500" font-size="20">19.7 C°</text>
-<text x="600" y="500" font-size="20">18.2 KM/H</text>
+<text x="50" y="500" font-size="20">2025-07-11</text>
+<text x="250" y="500" font-size="20">32.7 C°</text>
+<text x="350" y="500" font-size="20">21.3 C°</text>
+<text x="600" y="500" font-size="20">22.4 KM/H</text>
 <text x="850" y="500" font-size="20">0.0 MM</text>
 </svg>
